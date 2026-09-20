@@ -1,0 +1,1 @@
+export function HealthAttentionCard({items}:{items:string[]}){return <section className="summary-attention"><h4>需要关注</h4>{items.length?items.map((item,i)=><div key={i}><strong>⚠ {item}</strong><p>建议持续观察近期变化，并结合日常作息进行调整。</p></div>):<p>暂无需要特别关注的项目</p>}</section>}

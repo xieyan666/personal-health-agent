@@ -1,0 +1,29 @@
+# Requires-Python: >=3.12,<3.13
+SQLAlchemy>=2.0,<3.0
+asyncpg>=0.29,<1.0
+alembic>=1.13,<2.0
+pydantic-settings>=2.0,<3.0
+pytest>=8.0,<9.0
+pytest-asyncio>=0.24,<1.0
+redis>=5.0,<7.0
+qdrant-client>=1.12,<2.0
+minio>=7.2,<8.0
+fastapi>=0.115,<1.0
+uvicorn>=0.30,<1.0
+httpx>=0.27,<1.0
+bcrypt>=4.0,<5.0
+PyJWT>=2.8,<3.0
+python-multipart>=0.0.9,<1.0
+mcp>=1.0,<2.0
+pypinyin>=0.53,<1.0
+# Hybrid PDF parsing: Docling keeps native text, recognises tables, and invokes
+# RapidOCR only for scanned/image regions that need it.
+# The complete package is required at runtime: docling-slim intentionally does
+# not ship docling_parse, which DocumentConverter needs for PDF conversion.
+docling==2.122.0
+rapidocr==3.9.2
+paddlepaddle==3.3.1
+paddleocr==3.7.0
+onnxruntime==1.23.2
+pypdf==6.6.2
+PyMuPDF>=1.24,<2

@@ -1,0 +1,90 @@
+.agent-management-page {
+  padding: 4px 0 40px;
+}
+
+/* Keep the page subtitle while leaving the global Header as the sole title owner. */
+.agent-management-page::before {
+  content: "查看和配置企业健康服务中的 Agent 能力。";
+  display: block;
+  margin: 0 0 16px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.agent-kpi-row {
+  margin-bottom: 16px;
+  row-gap: 16px !important;
+  column-gap: 16px !important;
+}
+
+.agent-workspace {
+  gap: 16px;
+}
+
+/* Visual polish for the data-backed registry: keep both panes readable while
+   allowing long slugs/model names from the database to wrap naturally. */
+.agent-management-page {
+  min-height: calc(100vh - 120px);
+  padding: 24px 0 48px;
+  overflow-y: auto;
+}
+
+.agent-management-page > .ant-row {
+  margin-bottom: 18px;
+}
+
+.agent-kpi {
+  min-height: 112px;
+  background: linear-gradient(145deg, #fff 0%, #fbfffc 100%);
+}
+
+.agent-workspace {
+  grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1.6fr);
+  align-items: stretch;
+}
+
+.agent-list-panel,
+.agent-detail-panel {
+  min-width: 0;
+}
+
+.agent-list-panel .ant-card-body {
+  max-height: calc(100vh - 330px);
+  overflow-y: auto;
+  padding: 14px;
+}
+
+.agent-list-item {
+  min-height: 112px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.agent-list-main p,
+.agent-detail-title p,
+.agent-info-grid b {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.agent-detail-panel .ant-card-body {
+  padding: 22px 26px 28px;
+}
+
+.agent-detail-panel h3 {
+  margin: 24px 0 10px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 15px;
+}
+
+.agent-detail-title {
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .agent-workspace { grid-template-columns: 1fr; }
+  .agent-list-panel .ant-card-body { max-height: none; }
+}

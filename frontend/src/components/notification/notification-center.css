@@ -1,0 +1,25 @@
+.notif-popover{width:400px;max-width:calc(100vw - 32px)}
+.notif-popover .ant-popover-inner{padding:0;border-radius:14px;overflow:hidden}
+.notif-panel{display:flex;flex-direction:column}
+.notif-panel-head{display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px}
+.notif-panel-head b{font-size:15px;color:#1f2937}
+.notif-panel-head .ant-btn{color:#16a34a;font-size:12px}
+.notif-list{max-height:420px;overflow-y:auto;padding:0 8px 8px}
+.notif-item{display:flex;gap:12px;width:100%;padding:11px 10px;border:0;border-radius:10px;background:transparent;text-align:left;cursor:pointer;transition:background .15s}
+.notif-item:hover{background:#f8fafc}
+.notif-item.unread{background:#fbfcfd}
+.notif-item-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;font-size:16px;flex:none}
+.notif-item-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.notif-item-title{font-size:13px;color:#334155;font-weight:600;display:flex;align-items:center;gap:6px}
+.notif-item.read .notif-item-title{font-weight:400;color:#64748b}
+.notif-item-content{font-size:12px;color:#64748b;line-height:1.5;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.notif-item-time{font-size:11px;color:#94a3b8}
+.notif-dot{width:7px;height:7px;border-radius:50%;background:#ef4444;display:inline-block;flex:none;box-shadow:0 0 0 2px rgba(239,68,68,.15)}
+.notif-item.read .notif-dot{display:none}
+.notif-loading{display:flex;align-items:center;justify-content:center;gap:8px;padding:34px 0;color:#94a3b8;font-size:13px}
+.notif-empty-sub{margin-top:4px;color:#94a3b8;font-size:12px}
+.notif-settings-desc{color:#94a3b8;font-size:12px;line-height:1.7;margin-bottom:16px}
+.notif-settings{display:flex;flex-direction:column}
+.notif-setting-row{display:flex;justify-content:space-between;align-items:center;padding:14px 2px;border-bottom:1px solid #f1f5f9}
+.notif-setting-row:last-child{border-bottom:0}
+.notif-setting-row span{font-size:14px;color:#334155}

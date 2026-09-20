@@ -1,0 +1,464 @@
+/* Keep long database values inside their cards instead of letting them escape. */
+.agent-management-page,
+.agent-workspace,
+.agent-list-panel,
+.agent-detail-panel {
+  min-width: 0;
+}
+
+.agent-management-page {
+  overflow-x: hidden;
+}
+
+.agent-list-panel,
+.agent-detail-panel {
+  overflow: hidden;
+}
+
+.agent-list-panel .ant-card-body {
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+.agent-list-item {
+  min-width: 0;
+}
+
+.agent-list-main {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.agent-list-main strong,
+.agent-list-main small,
+.agent-list-main p {
+  display: block;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.45;
+}
+
+.agent-list-item > b {
+  flex: 0 0 58px;
+  text-align: right;
+}
+
+.agent-page-head {
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.agent-page-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 28px;
+  margin-bottom: 12px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.agent-page-toolbar .ant-btn {
+  border-radius: 9px;
+}
+
+.app-header-title {
+  min-width: 0;
+}
+
+.app-header-subtitle {
+  margin: 2px 0 0;
+  max-width: 720px;
+  overflow: hidden;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.agent-page-head h1 {
+  margin: 2px 0 4px;
+  color: #172033;
+  font-size: 27px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.agent-eyebrow {
+  color: #079447;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.agent-page-head .agent-subtitle {
+  max-width: 760px;
+  font-size: 14px;
+}
+
+.agent-kpi-row {
+  /* Keep the KPI band visually separated from the selector workspace. */
+  margin-bottom: 20px;
+}
+
+.agent-kpi {
+  height: 100%;
+  min-height: 112px;
+}
+
+.agent-kpi-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  font-size: 21px;
+}
+
+.agent-kpi-row > .ant-col:nth-child(2) .agent-kpi-icon {
+  color: #0284c7;
+  background: #eff6ff;
+}
+
+.agent-kpi-row > .ant-col:nth-child(3) .agent-kpi-icon {
+  color: #7c3aed;
+  background: #f5f3ff;
+}
+
+.agent-kpi-row > .ant-col:nth-child(4) .agent-kpi-icon {
+  color: #f97316;
+  background: #fff7ed;
+}
+
+.agent-list-tools {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.agent-list-tools .ant-input-affix-wrapper {
+  flex: 1;
+  border-radius: 9px;
+}
+
+.agent-list-tools .ant-btn {
+  border-radius: 9px;
+}
+
+.agent-filter-chips {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.agent-filter-chips button {
+  flex: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: #fff;
+  color: #475569;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 4px 13px;
+  transition: .18s ease;
+}
+
+.agent-filter-chips button:hover,
+.agent-filter-chips button.selected {
+  border-color: #86efac;
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+.agent-list-stats {
+  display: flex;
+  flex: 0 0 78px;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.agent-list-stats b {
+  color: #16a34a;
+  font-size: 16px;
+  line-height: 1.05;
+  text-align: right;
+}
+
+.agent-list-stats small {
+  display: block;
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.agent-basic-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.agent-basic-card {
+  margin: 0;
+}
+
+.agent-basic-card .ant-card-head {
+  min-height: 48px;
+}
+
+.agent-basic-card .ant-card-body {
+  padding: 2px 16px 10px;
+}
+
+.agent-detail-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.agent-detail-stat-strip > div {
+  min-height: 76px;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 12px 14px;
+}
+
+.agent-detail-stat-strip span {
+  display: block;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.agent-detail-stat-strip b {
+  display: block;
+  color: #1f2937;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.agent-trend {
+  margin-top: 12px;
+}
+
+.agent-trend .ant-card-body {
+  min-height: 180px;
+}
+
+.agent-trend svg {
+  display: block;
+  height: 175px;
+  width: 100%;
+}
+
+.agent-trend svg text {
+  fill: #94a3b8;
+  font-size: 11px;
+}
+
+@media (max-width: 1200px) {
+  .agent-basic-layout {
+    grid-template-columns: 1fr;
+  }
+  .agent-detail-stat-strip {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .agent-detail-stat-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.agent-detail-title {
+  min-width: 0;
+}
+
+.agent-detail-title > div:nth-child(2) {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.agent-detail-title p {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.agent-info-grid > div,
+.agent-info-grid b {
+  min-width: 0;
+}
+
+.agent-info-grid b {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Agent selector is a bounded 3x2 grid; details occupy the full row below. */
+.agent-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.agent-selector-panel,
+.agent-detail-workspace {
+  width: 100%;
+  min-width: 0;
+}
+
+.agent-selector-panel .ant-card-body {
+  min-width: 0;
+  overflow: visible;
+}
+
+.agent-filter-divider {
+  width: 1px;
+  height: 22px;
+  align-self: center;
+  background: #e2e8f0;
+  margin: 0 2px;
+  flex: none;
+}
+
+.agent-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  min-height: 120px;
+}
+
+.agent-select-card {
+  min-width: 0;
+  min-height: 142px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 13px;
+  background: #fff;
+  color: #1f2937;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .18s ease, background .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.agent-select-card:hover {
+  border-color: #86efac;
+  background: #f7fff9;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, .09);
+  transform: translateY(-1px);
+}
+
+.agent-select-card.active {
+  border-color: #4ade80;
+  background: #ecfdf3;
+  box-shadow: 0 0 0 1px rgba(74, 222, 128, .15);
+}
+
+.agent-select-card-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.agent-select-card-header .agent-list-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.agent-select-card-header strong {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.agent-select-card-header .ant-tag {
+  margin: 0;
+  flex: none;
+  font-size: 11px;
+}
+
+.agent-select-description {
+  display: -webkit-box;
+  min-height: 36px;
+  margin: 12px 0 10px;
+  overflow: hidden;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.agent-select-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.agent-select-meta .ant-tag {
+  margin: 0;
+  font-size: 10px;
+}
+
+.agent-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 16px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.agent-pagination > span {
+  margin-right: auto;
+}
+
+.agent-pagination button {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 7px;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  background: #fff;
+  color: #475569;
+  cursor: pointer;
+}
+
+.agent-pagination button:hover:not(:disabled),
+.agent-pagination button.selected {
+  border-color: #86efac;
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+.agent-pagination button:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+@media (max-width: 900px) {
+  .agent-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  .agent-card-grid { grid-template-columns: 1fr; }
+}

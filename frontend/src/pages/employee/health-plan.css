@@ -1,0 +1,60 @@
+.health-plan-page{padding:4px 0 40px;min-height:100%}
+.plan-heading{margin-bottom:20px}
+.plan-heading .eyebrow,.plan-heading h2{display:none}
+.plan-heading p{margin:0;color:#64748b}
+.plan-card{border-radius:16px;border-color:#e2e8f0;box-shadow:0 1px 3px rgba(15,23,42,.04);margin-bottom:16px}
+.plan-card .ant-card-body{padding:20px 24px}
+.plan-block-title{display:flex;align-items:baseline;gap:10px}
+.plan-block-title small{color:#94a3b8;font-weight:400}
+.plan-empty{display:flex;flex-direction:column;align-items:center;gap:10px;padding:34px 0;text-align:center}
+.plan-empty-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;background:#dcfce7;color:#159447;font-size:26px}
+.plan-empty h3{margin:0;color:#1f2937}
+.plan-empty p{margin:0 0 8px;color:#94a3b8}
+.plan-current-head{display:flex;gap:18px;align-items:flex-start}
+.plan-current-icon{display:grid;place-items:center;width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,#dcfce7,#bbf7d0);color:#159447;font-size:26px;flex:none}
+.plan-current-main{flex:1;min-width:0}
+.plan-current-title{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.plan-current-title h2{margin:0;font-size:21px;color:#1f2937}
+.plan-current-meta{margin:7px 0 4px;color:#64748b;font-size:13px}
+.plan-current-progress{max-width:420px;margin:2px 0 10px}
+.plan-current-progress .ant-progress{line-height:1}
+.plan-goals{margin:0;padding-left:18px;color:#475569;font-size:13px;display:flex;flex-direction:column;gap:3px}
+.plan-current-actions{display:flex;flex-direction:column;gap:8px;flex:none}
+.plan-source-line{margin-top:14px;padding-top:12px;border-top:1px dashed #e2e8f0;color:#94a3b8;font-size:12px}
+.plan-source-line b{color:#16a34a;font-weight:600}
+.plan-tasks{display:flex;flex-direction:column;gap:8px}
+.plan-task{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#fff;transition:background .15s}
+.plan-task:hover{background:#f8fffa}
+.plan-task.done{background:#f0fdf4;border-color:#bbf7d0}
+.plan-task .ant-checkbox{transform:scale(1.15);margin-top:3px}
+.plan-task-body{flex:1;min-width:0}
+.plan-task-title{font-size:14px;color:#334155;font-weight:600}
+.plan-task.done .plan-task-title{color:#94a3b8;text-decoration:line-through}
+.plan-task-sub{display:flex;align-items:center;gap:10px;margin-top:4px;flex-wrap:wrap}
+.plan-task-progress{color:#d97706;font-size:12px;background:#fffbeb;border-radius:6px;padding:1px 8px}
+.plan-task-time{color:#159447;font-size:12px}
+.plan-task-source{color:#94a3b8;font-size:11px}
+.plan-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.plan-stat{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #e2e8f0;border-radius:14px;background:#f8fafc}
+.plan-stat-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;font-size:18px;flex:none}
+.plan-stat small{display:block;color:#94a3b8;font-size:12px}
+.plan-stat b{display:block;margin-top:2px;font-size:19px;color:#1f2937}
+.plan-stats-note{margin-top:12px;padding:10px 12px;border-radius:10px;background:#f1f5f9;color:#94a3b8;font-size:12px;line-height:1.6}
+.plan-day-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.plan-day-tab{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:64px;padding:10px 12px;border:1px solid #e2e8f0;border-radius:12px;background:#fff;cursor:pointer;transition:all .15s}
+.plan-day-tab b{font-size:13px;color:#475569}
+.plan-day-tab small{font-size:11px;color:#94a3b8}
+.plan-day-tab:hover{border-color:#86efac}
+.plan-day-tab.active{background:#16a34a;border-color:#16a34a}
+.plan-day-tab.active b,.plan-day-tab.active small{color:#fff}
+.plan-day-tab.current:not(.active){border-color:#86efac;background:#f0fdf4}
+.plan-day-tab.current:not(.active) b{color:#159447}
+.plan-day-tasks h4{display:flex;align-items:center;gap:8px;margin:0 0 12px;font-size:15px;color:#334155}
+.plan-day-task{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid #e2e8f0;border-radius:10px;background:#fff;margin-bottom:8px}
+.plan-day-task.done{background:#f0fdf4;border-color:#bbf7d0}
+.plan-day-task-mark{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#e2e8f0;color:#94a3b8;font-size:12px;flex:none}
+.plan-day-task.done .plan-day-task-mark{background:#dcfce7;color:#159447}
+.plan-day-task-title{flex:1;font-size:13px;color:#334155}
+.plan-day-task.done .plan-day-task-title{color:#94a3b8;text-decoration:line-through}
+.plan-acting{position:fixed;right:24px;bottom:24px;z-index:20;box-shadow:0 4px 14px rgba(15,23,42,.12)}
+@media (max-width:900px){.plan-current-head{flex-direction:column}.plan-current-actions{flex-direction:row;flex-wrap:wrap}}

@@ -1,0 +1,23 @@
+html, body, #root { height: 100%; }
+.app-shell { height: 100vh; min-height: 0; overflow: hidden; }
+.sidebar { height: 100vh; overflow: hidden; }
+.app-body { height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+.app-header { flex: 0 0 86px; }
+.assistant-main-content { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; padding: 38px; box-sizing: border-box; }
+.assistant-main-content > .assistant-page { width: 100%; }
+.assistant-page { height: 100%; min-height: 0; display: flex; flex-direction: column; }
+.assistant-heading { flex: 0 0 auto; }
+.assistant-layout { flex: 1 1 auto; min-height: 0; height: auto; }
+.assistant-conversations { min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+.assistant-conversations > .ant-list { flex: 1 1 auto; min-height: 0; overflow-y: auto; overflow-x: hidden; }
+.assistant-chat { min-height: 0; height: 100%; }
+.assistant-chat-scroll { min-height: 0; }
+.assistant-context { min-height: 0; height: 100%; overflow-y: auto; overflow-x: hidden; padding-right: 4px; }
+.assistant-page ::-webkit-scrollbar { width: 6px; height: 6px; }
+.assistant-page ::-webkit-scrollbar-track { background: transparent; }
+.assistant-page ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 10px; }
+.assistant-page ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+@media (max-width: 1400px) {
+  .assistant-layout { grid-template-columns: 200px minmax(420px, 1fr) 270px; gap: 12px; }
+  .assistant-main-content { padding: 20px; }
+}

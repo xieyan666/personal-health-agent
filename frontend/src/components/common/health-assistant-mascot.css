@@ -1,0 +1,74 @@
+.health-assistant-mascot {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 126px;
+  margin: 8px 0 4px;
+  padding: 6px 4px 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.health-assistant-mascot:hover,
+.health-assistant-mascot:focus-visible {
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+  outline: none;
+}
+
+.health-assistant-mascot:hover .mascot-image,
+.health-assistant-mascot:focus-visible .mascot-image {
+  filter: drop-shadow(0 7px 8px rgba(22, 163, 74, .18));
+  transform: scale(1.055);
+}
+
+.mascot-hint {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  z-index: 1;
+  padding: 3px 7px;
+  border: 1px solid #bbf7d0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .96);
+  color: #15803d;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1px;
+  opacity: .88;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.health-assistant-mascot:hover .mascot-hint,
+.health-assistant-mascot:focus-visible .mascot-hint { opacity: 1; transform: translateY(-1px); }
+
+.mascot-image {
+  width: 146px;
+  max-width: 100%;
+  height: 118px;
+  object-fit: contain;
+  object-position: center bottom;
+  border-radius: 12px;
+  transition: transform 180ms ease, filter 180ms ease;
+  animation: mascot-idle 3.6s ease-in-out infinite;
+}
+
+@keyframes mascot-idle {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-5px) scale(1.018, .992); }
+}
+
+@media (max-height: 760px) {
+  .health-assistant-mascot { min-height: 92px; margin-top: 3px; }
+  .mascot-image { width: 116px; height: 94px; }
+  .mascot-hint { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-image { animation: none; }
+  .health-assistant-mascot, .mascot-image, .mascot-hint { transition: none; }
+}

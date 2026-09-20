@@ -1,0 +1,4 @@
+import { Card, Tag } from 'antd'
+import { mockContext } from '../mockHealthAssistant'
+
+export function HealthContextPanel() { return <Card title="本次分析依据" className="assistant-panel-card"><div className="assistant-context-section"><h4>健康档案</h4>{mockContext.slice(0, 2).map(([label, value, source]) => <div className="assistant-context-row" key={label}><span>{label}</span><strong>{value}</strong><Tag>{source}</Tag></div>)}</div><div className="assistant-context-section"><h4>近期健康数据</h4>{mockContext.slice(2, 5).map(([label, value, source]) => <div className="assistant-context-row" key={label}><span>{label}</span><strong>{value}</strong><Tag>{source}</Tag></div>)}</div><div className="assistant-context-section"><h4>最近体检与计划</h4>{mockContext.slice(5).map(([label, value, source]) => <div className="assistant-context-row" key={label}><span>{label}</span><strong>{value}</strong><Tag>{source}</Tag></div>)}</div></Card> }

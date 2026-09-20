@@ -1,0 +1,2 @@
+"""Emergency Event agent."""
+

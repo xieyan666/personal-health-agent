@@ -1,0 +1,1 @@
+export function HealthStatusCard({text}:{text:string}){return <section className="summary-status"><div className="summary-status-icon">✓</div><div><h4>整体健康状态</h4><strong>整体健康状态良好</strong><p>{text}</p></div></section>}

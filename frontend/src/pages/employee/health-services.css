@@ -1,0 +1,91 @@
+.health-services-page{padding:4px 0 40px;min-height:100%}
+.svc-heading{margin-bottom:20px}
+.svc-heading .eyebrow,.svc-heading h2{display:none}
+.svc-heading p{margin:0;color:#64748b}
+.svc-card{border-radius:16px;border-color:#e2e8f0;box-shadow:0 1px 3px rgba(15,23,42,.04);margin-bottom:16px}
+.svc-card .ant-card-body{padding:20px 24px}
+.svc-recommend{display:flex;gap:14px;padding:16px;border:1px solid #e2e8f0;border-radius:14px;background:#f8fafc;height:100%}
+.svc-recommend-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;font-size:20px;flex:none}
+.svc-recommend-body{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.svc-recommend-title{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.svc-recommend-title h4{margin:0;font-size:15px;color:#1f2937}
+.svc-recommend-reason{margin:0;color:#64748b;font-size:12px;line-height:1.6;flex:1}
+.svc-recommend-sources{display:flex;gap:4px;flex-wrap:wrap}
+.svc-recommend-subtitle{color:#94a3b8;font-size:12px;font-weight:400}
+.svc-recommend-loading{display:flex;align-items:center;gap:10px;color:#64748b;font-size:13px;padding:14px 0}
+.svc-recommend-spinner{width:16px;height:16px;border:2px solid #d1fae5;border-top-color:#16a34a;border-radius:50%;animation:svc-spin 0.8s linear infinite}
+.svc-recommend-empty{display:flex;flex-direction:column;align-items:center;gap:12px;padding:18px 0}
+@keyframes svc-spin{to{transform:rotate(360deg)}}
+.svc-tab-icon{margin-right:6px}
+.svc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.svc-service{display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
+.svc-service-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.svc-service-head h4{margin:0;font-size:14px;color:#334155}
+.svc-service-desc{margin:0;color:#64748b;font-size:12px;line-height:1.6;flex:1}
+.svc-service-meta{display:flex;gap:12px;color:#94a3b8;font-size:12px}
+.svc-service-suit{margin:0;color:#94a3b8;font-size:11px;line-height:1.5}
+.svc-booking-list{display:flex;flex-direction:column;gap:10px}
+.svc-booking{display:flex;align-items:center;gap:14px;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
+.svc-booking-date{display:flex;flex-direction:column;align-items:center;min-width:70px;padding-right:14px;border-right:1px solid #e2e8f0}
+.svc-booking-date b{font-size:14px;color:#16a34a}
+.svc-booking-date span{font-size:12px;color:#64748b}
+.svc-booking-body{flex:1;min-width:0}
+.svc-booking-body h4{margin:0 0 3px;font-size:14px;color:#334155}
+.svc-booking-body p{margin:0;color:#94a3b8;font-size:12px}
+.svc-booking-status{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.svc-benefits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.svc-benefit{padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc}
+.svc-benefit-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.svc-benefit-head b{font-size:14px;color:#334155}
+.svc-benefit-head span{font-size:12px;color:#64748b}
+.svc-benefit .ant-progress{margin:0}
+.svc-benefit-remain{margin-top:6px;font-size:12px;color:#94a3b8}
+.svc-benefit-remain b{color:#159447;font-size:15px}
+.svc-activity{display:flex;flex-direction:column;gap:8px;padding:16px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;height:100%}
+.svc-activity.joined{background:#f0fdf4;border-color:#bbf7d0}
+.svc-activity-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#dcfce7;color:#159447;font-size:19px}
+.svc-activity h4{margin:0;font-size:14px;color:#1f2937}
+.svc-activity-desc{margin:0;color:#64748b;font-size:12px;line-height:1.6;flex:1}
+.svc-activity-meta{display:flex;flex-direction:column;gap:3px;color:#94a3b8;font-size:11px}
+.svc-activity-toolbar{display:flex;align-items:center;justify-content:space-between;margin:0 0 14px}.svc-activity-toolbar>span{color:#64748b;font-size:13px}.svc-activity-nav{display:flex;gap:8px}.svc-activity-nav .ant-btn{border-color:#bbf7d0;color:#15803d}.svc-activity-nav .ant-btn:disabled{border-color:#e2e8f0;color:#cbd5e1}.svc-activity-page{min-height:350px}.svc-activity-dots{display:flex;justify-content:center;gap:7px;margin-top:18px}.svc-activity-dots button{width:7px;height:7px;padding:0;border:0;border-radius:999px;background:#d1d5db;cursor:pointer;transition:width .18s ease,background-color .18s ease}.svc-activity-dots button.active{width:22px;background:#16a34a}
+.svc-modal-info p{margin:0 0 8px;color:#64748b;font-size:13px}
+.svc-modal-form{display:flex;gap:12px;margin-top:12px}
+.svc-modal-form>div{flex:1}
+.svc-modal-form label{display:block;margin-bottom:6px;color:#64748b;font-size:12px}
+@media (max-width:1200px){.svc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.svc-benefits{grid-template-columns:1fr}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+/* ---- 企业健康活动（卡片式） ---- */
+.svc-tab-panel{padding-top:4px}
+.svc-activity-card{display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;height:100%;box-shadow:0 1px 3px rgba(15,23,42,.04);transition:transform .18s ease,box-shadow .18s ease}
+.svc-activity-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,23,42,.08)}
+.svc-activity-card-top{display:flex;align-items:center;justify-content:space-between}
+.svc-activity-card-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;font-size:19px}
+.svc-activity-card h4{margin:0;font-size:15px;color:#1f2937}
+.svc-activity-card-desc{margin:0;color:#64748b;font-size:12px;line-height:1.6;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.svc-activity-card-meta{display:flex;flex-direction:column;gap:4px;color:#94a3b8;font-size:11px}
+.svc-activity-card-meta span{display:flex;align-items:center;gap:5px}
+.svc-activity-card-full{color:#dc2626!important;font-weight:600}
+.svc-activity-card .ant-progress{margin:0}
+.svc-activity-card-actions{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+/* 活动详情 Drawer */
+.svc-activity-detail-head{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.svc-activity-detail-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;font-size:21px;flex:none}
+.svc-activity-detail-head h3{margin:0 0 4px;font-size:17px;color:#1f2937}
+.svc-activity-detail-grid{display:grid;grid-template-columns:82px 1fr;gap:9px 8px;background:#f8fafc;border-radius:12px;padding:14px 16px;margin-bottom:14px}
+.svc-activity-detail-grid span{color:#94a3b8;font-size:12px}
+.svc-activity-detail-grid b{color:#334155;font-size:13px;font-weight:500}
+.svc-activity-detail-strong{color:#16a34a!important;font-weight:600!important}
+.svc-activity-detail-desc{color:#475569;font-size:13px;line-height:1.7;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;margin:0 0 16px}
+.svc-activity-detail-actions{display:flex;gap:8px}
+/* 我的活动 */
+.svc-my-list{display:flex;flex-direction:column;gap:10px}
+.svc-my-item{display:flex;align-items:flex-start;gap:12px;padding:14px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
+.svc-my-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;font-size:18px;flex:none}
+.svc-my-body{flex:1;min-width:0}
+.svc-my-body h4{margin:0 0 5px;font-size:14px;color:#334155}
+.svc-my-body p{margin:0 0 3px;color:#94a3b8;font-size:12px}
+.svc-my-body p svg{margin-right:5px}
+.svc-my-cancel-note{color:#94a3b8!important;font-size:11px!important}
+.svc-my-status{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none}

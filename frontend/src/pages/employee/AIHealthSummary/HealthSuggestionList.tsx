@@ -1,0 +1,1 @@
+export function HealthSuggestionList({items}:{items:string[]}){const list=items.length?items:['保持规律睡眠时间','睡前减少电子设备使用','保持规律运动习惯'];return <section className="summary-suggestions"><h4>健康建议</h4>{list.map((item,i)=><div className="summary-suggestion" key={i}><b>{String(i+1).padStart(2,'0')}</b><span>{item}</span></div>)}</section>}

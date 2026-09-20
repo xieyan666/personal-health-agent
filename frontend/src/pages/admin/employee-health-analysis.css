@@ -1,0 +1,55 @@
+.a-page{padding:4px 0 40px;min-height:100%}
+.a-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:20px}
+.a-heading .eyebrow,.a-heading h2{display:none}
+.a-heading{align-items:center}
+.a-heading p{margin:0;color:#64748b}
+.a-filters{display:flex;gap:10px;align-items:center}
+.a-kpi-row{margin-bottom:16px}
+.a-kpi{border-radius:16px;border-color:#e2e8f0;box-shadow:0 1px 3px rgba(15,23,42,.04);height:100%}
+.a-kpi .ant-card-body{display:flex;gap:14px;align-items:center;padding:20px}
+.a-kpi-icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:20px;flex:none}
+.a-kpi-body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.a-kpi-body small{color:#94a3b8;font-size:12px}
+.a-kpi-body b{font-size:24px;color:#1f2937;line-height:1.2}
+.a-kpi-body b em{font-style:normal;font-size:12px;color:#94a3b8;margin-left:3px}
+.a-kpi-body p{margin:0;color:#64748b;font-size:12px}
+.a-card{border-radius:16px;border-color:#e2e8f0;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+.a-card .ant-card-head{min-height:52px}
+.a-chart{width:100%}
+.a-chart-donut{height:210px}
+.a-distribution-list{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;margin-top:6px}
+.a-distribution-item{display:flex;align-items:center;gap:6px;font-size:12px;color:#475569}
+.a-dot{width:8px;height:8px;border-radius:50%}
+.a-distribution-percent{color:#1f2937;font-weight:600}
+.a-distribution-count{color:#94a3b8}
+.a-risk-list{display:flex;flex-direction:column;gap:12px;padding-top:4px}
+.a-risk-item{display:flex;align-items:center;gap:10px}
+.a-risk-rank{width:20px;height:20px;border-radius:6px;background:#f0fdf4;color:#159447;font-size:11px;display:grid;place-items:center;font-weight:700;flex:none}
+.a-risk-name{width:110px;font-size:13px;color:#334155;flex:none}
+.a-risk-item .ant-progress{flex:1;margin:0}
+.a-risk-meta{width:76px;text-align:right;font-size:11px;color:#94a3b8;flex:none}
+.a-dep-name{color:#1f2937}
+.a-rate-cell{display:flex;align-items:center;gap:8px}
+.a-rate-cell .ant-progress{flex:1;margin:0}
+.a-rate-cell em{font-style:normal;font-size:11px;color:#94a3b8;width:38px;text-align:right}
+.a-sample-warn{color:#94a3b8;font-size:12px}
+.a-none{color:#94a3b8}
+@media (max-width:900px){.a-heading{flex-direction:column}.a-filters{width:100%}}
+
+/* 部门下拉弹层：明显滚动条 */
+.a-dept-popup .rc-virtual-list-holder-inner{overflow-y:auto!important}
+.a-dept-popup .rc-virtual-list-holder-inner::-webkit-scrollbar{width:8px}
+.a-dept-popup .rc-virtual-list-holder-inner::-webkit-scrollbar-thumb{background:#16a34a;border-radius:4px}
+.a-dept-popup .rc-virtual-list-holder-inner::-webkit-scrollbar-track{background:#f1f5f9;border-radius:4px}
+
+/* 页面整体：明显滚动条（覆盖组件库默认隐藏） */
+.a-page{scrollbar-width:thin;scrollbar-color:#94a3b8 transparent}
+.a-page::-webkit-scrollbar{width:10px;height:10px}
+.a-page::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:5px;border:2px solid #f8fafc}
+.a-page::-webkit-scrollbar-thumb:hover{background:#94a3b8}
+.a-page::-webkit-scrollbar-track{background:transparent}
+
+/* 表格、卡片内滚动条（与其他页面统一） */
+.ant-table-body,.ant-table-content{scrollbar-width:thin;scrollbar-color:#94a3b8 transparent}
+.ant-table-body::-webkit-scrollbar,.ant-table-content::-webkit-scrollbar{width:8px;height:8px}
+.ant-table-body::-webkit-scrollbar-thumb,.ant-table-content::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}

@@ -1,0 +1,47 @@
+.pc-page{padding:4px 0 40px;min-height:100%}
+.pc-heading{margin-bottom:20px}
+.pc-heading p{margin:0;color:#64748b}
+.pc-card{border-radius:16px;border-color:#e2e8f0;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+.pc-avatar-block{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 0 18px;border-bottom:1px solid #f1f5f9}
+.pc-avatar-block h3{margin:8px 0 0;font-size:18px;color:#1f2937}
+.pc-avatar-block p{margin:0;color:#94a3b8;font-size:12px}
+.pc-avatar-upload{position:relative;display:inline-flex;align-items:center;justify-content:center}
+.pc-avatar-action{position:absolute!important;right:-5px;bottom:-4px;display:grid!important;place-items:center;border:2px solid #fff!important;color:#15803d!important;box-shadow:0 2px 8px rgba(15,23,42,.16)}
+.pc-readonly-list{display:flex;flex-direction:column;margin-top:14px}
+.pc-readonly{display:flex;justify-content:space-between;align-items:center;padding:9px 2px;border-bottom:1px solid #f8fafc}
+.pc-readonly:last-child{border-bottom:0}
+.pc-readonly span{color:#94a3b8;font-size:12px}
+.pc-readonly b{font-size:13px;color:#334155;font-weight:500}
+.pc-profile-view{display:flex;flex-direction:column}
+.pc-field{display:flex;padding:11px 2px;border-bottom:1px solid #f8fafc}
+.pc-field span{width:110px;color:#94a3b8;font-size:13px;flex:none}
+.pc-field b{color:#334155;font-size:13px;font-weight:500}
+.pc-field-bio b{line-height:1.7}
+.pc-readonly-text{color:#94a3b8 !important}
+.pc-form{display:flex;flex-direction:column;gap:14px}
+.pc-form-row{display:flex;flex-direction:column;gap:6px}
+.pc-form-row label{color:#64748b;font-size:13px}
+.pc-form-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:6px}
+.pc-loading{display:grid;min-height:280px;place-items:center;color:#64748b}
+.pc-security-card{margin-top:16px}.pc-security-content{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:58px}.pc-security-copy{display:flex;flex-direction:column;gap:6px}.pc-security-copy b{font-size:15px;color:#334155}.pc-security-copy span{font-size:13px;color:#64748b}@media(max-width:640px){.pc-security-content{align-items:flex-start;flex-direction:column}.pc-security-content .ant-btn{width:100%}}
+
+/* Administrator personal center keeps the same restrained enterprise layout. */
+.admin-pc-page{padding:4px 0 40px;min-height:100%}
+.admin-pc-page .pc-heading{margin-bottom:18px}
+.admin-pc-page .pc-heading .page-kicker{color:#16a34a;letter-spacing:.2em;font-size:12px;font-weight:700}
+.admin-pc-page .pc-heading h2{margin:4px 0 8px;font-size:28px;color:#1f2937}
+.admin-pc-page .pc-heading p{margin:0;color:#64748b}
+.admin-pc-tabs{display:flex;gap:24px;border-bottom:1px solid #e2e8f0;margin-bottom:18px}
+.admin-pc-tabs button{appearance:none;border:0;border-bottom:2px solid transparent;background:transparent;color:#64748b;padding:10px 4px;font-size:14px;cursor:pointer}
+.admin-pc-tabs button:hover,.admin-pc-tabs button.active{color:#15803d}
+.admin-pc-tabs button.active{border-bottom-color:#16a34a;font-weight:600}
+.admin-tab-card{min-height:300px}
+.admin-password-intro{color:#64748b;margin-bottom:20px}
+.admin-password-form{max-width:560px}
+.admin-preferences{max-width:760px}
+.admin-notice-copy{color:#64748b;margin:0 0 10px}
+.admin-preference-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 4px;border-bottom:1px solid #f1f5f9}
+.admin-preference-row:last-child{border-bottom:0}
+.admin-preference-row div{display:flex;flex-direction:column;gap:5px}
+.admin-preference-row b{color:#334155;font-size:15px}
+.admin-preference-row span{color:#64748b;font-size:13px}

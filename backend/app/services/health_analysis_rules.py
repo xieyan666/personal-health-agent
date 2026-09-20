@@ -1,0 +1,3 @@
+def analyze(profile: dict, trend: dict) -> dict:
+    bmi=profile.get('bmi'); sleep=trend.get('sleep',{}).get('average'); exercise=trend.get('exercise',{}).get('average_minutes'); hr=trend.get('heart_rate',{}).get('average')
+    return {'bmi_status':'normal' if bmi is not None and 18.5<=bmi<24 else 'attention' if bmi is not None else 'unknown','sleep_status':'normal' if sleep is not None and sleep>=7 else 'attention' if sleep is not None and sleep>=6 else 'risk' if sleep is not None else 'unknown','exercise_status':'normal' if exercise is not None and exercise*7>=150 else 'attention' if exercise is not None else 'unknown','heart_status':'normal' if hr is not None and 60<=hr<=100 else 'attention' if hr is not None else 'unknown'}

@@ -1,0 +1,80 @@
+.a-page{padding:4px 0 40px;min-height:100%}
+.a-page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px}
+.a-subtitle{color:#64748b;font-size:13px;margin:0}
+.a-kpi-row{margin-bottom:16px}
+.a-kpi{border-radius:16px;border-color:#e2e8f0;box-shadow:0 1px 3px rgba(15,23,42,.04);transition:transform .18s ease,box-shadow .18s ease;height:100%}
+.a-kpi:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,23,42,.08)}
+.a-kpi .ant-card-body{display:flex;gap:14px;align-items:flex-start;padding:18px 20px}
+.a-kpi-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:19px;flex:none}
+.a-kpi-body small{color:#94a3b8;font-size:12px;display:block}
+.a-kpi-body b{font-size:26px;color:#1f2937;line-height:1.1}
+.a-kpi-body p{margin:2px 0 0;color:#94a3b8;font-size:11px}
+.a-card{border-radius:16px;border-color:#e2e8f0;box-shadow:0 1px 3px rgba(15,23,42,.04);margin-bottom:16px}
+.a-card .ant-card-head{min-height:52px}
+.a-side-note{color:#94a3b8;font-size:12px;font-weight:400}
+.a-name{color:#334155;font-weight:500}
+.a-muted{color:#94a3b8;font-size:12px}
+.a-num{color:#1f2937;font-weight:600}
+
+/* ---- 活动时间轴 ---- */
+.a-op-timeline{display:flex;flex-direction:column;gap:18px}
+.a-op-timeline-month-title{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#334155;margin-bottom:8px}
+.a-op-timeline-month-title::before{content:'';width:8px;height:8px;border-radius:2px;background:#16a34a;transform:rotate(45deg)}
+.a-op-timeline-month-title span{color:#94a3b8;font-size:11px;font-weight:400}
+.a-op-timeline-item{display:flex;align-items:center;gap:12px;width:100%;padding:9px 12px;border:1px solid #eef2f6;border-radius:10px;background:#fff;cursor:pointer;margin-bottom:6px;transition:border-color .15s ease,background-color .15s ease;text-align:left}
+.a-op-timeline-item:hover{border-color:#bbf7d0;background:#f7fef9}
+.a-op-timeline-date{font-size:12px;font-weight:600;color:#16a34a;min-width:44px}
+.a-op-timeline-name{flex:1;color:#334155;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ---- 活动卡片 ---- */
+.a-op-cards-card .ant-card-body{padding-top:8px}
+.a-op-card{display:flex;flex-direction:column;gap:10px;padding:15px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;height:100%;box-shadow:0 1px 3px rgba(15,23,42,.04);transition:transform .18s ease,box-shadow .18s ease}
+.a-op-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,23,42,.08)}
+.a-op-card-head{display:flex;align-items:center;gap:10px}
+.a-op-card-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;font-size:17px;flex:none}
+.a-op-card-title{flex:1;min-width:0}
+.a-op-card-title h4{margin:0 0 2px;font-size:14px;color:#1f2937;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.a-op-card-title span{color:#94a3b8;font-size:11px}
+.a-op-card-meta{display:flex;flex-direction:column;gap:4px;color:#64748b;font-size:12px}
+.a-op-card-meta span{display:flex;align-items:center;gap:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.a-op-card-meta svg{color:#94a3b8}
+.a-op-card-progress{padding:9px 11px;background:#f8fafc;border-radius:10px}
+.a-op-card-progress-head{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#475569;margin-bottom:6px}
+.a-op-card-progress-head b{color:#16a34a}
+.a-op-progress-bar{height:6px;background:#e2e8f0;border-radius:999px;overflow:hidden}
+.a-op-progress-fill{height:100%;border-radius:999px;transition:width .4s ease}
+.a-op-card-progress small{display:block;margin-top:5px;color:#94a3b8;font-size:11px}
+.a-op-card-foot{display:flex;align-items:center;justify-content:space-between}
+.a-op-card-time{color:#cbd5e1;font-size:11px}
+
+/* ---- 右侧：报名动态 / 状态概览 ---- */
+.a-side-card{height:auto}
+.a-dyn-list{display:flex;flex-direction:column}
+.a-dyn-item{display:flex;gap:10px;padding:10px 2px;border-bottom:1px solid #f1f5f9}
+.a-dyn-item:last-child{border-bottom:0}
+.a-dyn-icon{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-size:13px;flex:none}
+.a-dyn-icon.joined{background:#f0fdf4;color:#16a34a}
+.a-dyn-icon.cancelled{background:#fef2f2;color:#dc2626}
+.a-dyn-body{flex:1;min-width:0}
+.a-dyn-body p{margin:0 0 2px;font-size:12px;color:#334155}
+.a-dyn-body b{color:#1f2937}
+.a-dyn-activity{color:#64748b}
+.a-dyn-body small{color:#94a3b8;font-size:11px}
+.a-dyn-loading{color:#94a3b8;font-size:13px;padding:18px 0;text-align:center}
+.a-status-overview{display:flex;flex-direction:column;gap:8px}
+.a-status-row{display:flex;align-items:center;gap:8px;font-size:13px}
+.a-status-row b{min-width:24px;text-align:right;color:#1f2937}
+.a-status-row span{color:#94a3b8;font-size:12px}
+
+/* ---- 详情 Drawer ---- */
+.a-detail-head{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.a-detail-icon{width:44px;height:44px;border-radius:12px;background:#f0fdf4;color:#16a34a;display:grid;place-items:center;font-size:20px;flex:none}
+.a-detail-head h3{margin:0 0 4px;font-size:17px;color:#1f2937}
+.a-detail-actions{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.a-detail-grid{display:grid;grid-template-columns:86px 1fr;gap:9px 8px;background:#f8fafc;border-radius:12px;padding:14px 16px;margin-bottom:14px}
+.a-detail-grid span{color:#94a3b8;font-size:12px}
+.a-detail-grid b{color:#334155;font-size:13px;font-weight:500}
+.a-detail-strong{color:#16a34a!important;font-weight:600!important}
+.a-detail-desc{color:#475569;font-size:13px;line-height:1.7;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;margin:0 0 6px}
+.a-section-title{color:#64748b;font-size:12px;letter-spacing:1px;margin:16px 0 10px}
+.a-detail-loading{display:grid;place-items:center;min-height:280px;color:#94a3b8}
