@@ -164,4 +164,34 @@ docker compose ps
 ```
 
 确认 `.env`、本地健康数据、运行数据、密钥和大文件均未进入提交后，再创建 GitHub 仓库并推送。
+## 📸 项目预览
 
+### 🏠 平台首页 / 健康驾驶舱
+
+展示企业生命健康智能体平台的整体工作台，包括健康数据、核心指标和智能分析入口。
+
+![企业生命健康平台首页](docs/images/dashboard.png)
+
+---
+
+### 🤖 AI Health Agent
+
+AI 健康智能体工作台，通过大模型与 Agent 能力进行健康问题理解、数据分析和智能建议。
+
+![AI Health Agent](docs/images/health-agent.png)
+
+---
+
+### 📚 知识库与 RAG
+
+平台知识库用于管理健康领域知识，并为 AI Agent 提供知识检索与 RAG 上下文支持。
+
+![知识库与RAG](docs/images/knowledge-base.png)
+
+---
+
+### 🏗️ 系统架构
+
+平台采用前后端分离与 Agent 化架构，整合模型服务、知识库、工具调用及基础设施能力。
+
+![系统架构](docs/images/system-architecture.png)
