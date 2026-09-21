@@ -195,3 +195,19 @@ AI 健康智能体工作台，通过大模型与 Agent 能力进行健康问题�
 平台采用前后端分离与 Agent 化架构，整合模型服务、知识库、工具调用及基础设施能力。
 
 ![系统架构](docs/images/system-architecture.png)
+
+### 🩺 体检报告与 AI 解读
+
+支持上传体检报告 PDF，自动进行文本、表格及 OCR 解析，提取体检指标并识别异常项。
+
+<p align="center">
+  <img src="docs/images/health-report.png" width="90%" alt="体检报告解析">
+</p>
+
+系统可基于解析后的真实体检指标调用 AI Report Agent，对异常指标、关联指标和健康建议进行结构化解读。
+
+<p align="center">
+  <img src="docs/images/health-report-ai.png" width="90%" alt="AI体检报告解读">
+</p>
+
+---
